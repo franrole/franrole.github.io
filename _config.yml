@@ -34,16 +34,16 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "default" 
+      layout: "post" 
       author: "francois.role@u-paris.fr"
 
 
-# Liste des catégories
+# Liste des catégories https://www.valhalla.fr/2017/10/16/jekyll-une-page-par-categorie/
 collections:
   category:
     output: true # générer la page HTML
     permalink: /:collection/:name/index.html
-    # exemple -> /category/informatique/index.html
+    # exemple -> /category/ML/index.html
 
 defaults:
   - scope:

@@ -22,6 +22,21 @@ layout: page
 
 {% include head.html %}
 
-$\fracA^2$
+$\frac{1}{A^2}$
+
+{% for category in site.categories %}
+    <h2>{{ category[0] }}</h2>
+    <ul>
+        {% for post in category[1] %}
+        <li>{{post.title}}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+
+{% for cat in site.category %}
+  <h2>{{ cat.title}} - {{ cat.description}}</h2>
+  <!-- <p>{{ staff_member.content | markdownify }}</p> -->
+{% endfor %}
 
 </div>

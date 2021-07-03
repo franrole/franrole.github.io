@@ -1,5 +1,5 @@
 ---
-title: ML Category
-category: ML
-description: "About this category"
+title: MLtitle
+postcategory: ML
+description: "About ML"
 ---
