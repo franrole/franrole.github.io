@@ -1,5 +1,5 @@
 ---
 title: MLtitle
-postcategory: ML
+postcategory: [Machine Learning]
 description: "About ML"
 ---

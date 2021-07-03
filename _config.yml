@@ -41,7 +41,8 @@ collections:
   category:
     output: true # générer la page HTML
     permalink: /:collection/:name/index.html
-    # exemple -> /category/ML/index.html
+    # exemple -> https://franrole.github.io/category/ml/index.html
+    # file is ML.md !!!
 
 defaults:
   - scope:
