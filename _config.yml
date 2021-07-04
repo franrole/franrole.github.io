@@ -62,7 +62,7 @@ author:
   name: Francois Role
   email: "francois.role@u-paris.fr"
 
-theme: minima
+theme: jekyll-theme-minimal
 
 minima:
   skin: dark
