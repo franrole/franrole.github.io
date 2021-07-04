@@ -52,3 +52,16 @@ defaults:
       layout: "category"
       # layout utilisé -> _layouts/category.html
 
+header_pages:
+  - about.md
+  - other.md
+
+show_excerpts: true
+
+author:
+  name: Francois Role
+  email: "francois.role@gmail.com"
+
+minima:
+  skin: dark
+
