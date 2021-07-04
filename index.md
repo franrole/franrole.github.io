@@ -23,7 +23,7 @@ layout: page
 <!-- {% include head.html %} -->
 
 
-$\frac{1}{A^2}$
+$\frac{1}{A^3}$  !!!!
 
 {% for category in site.categories %}
     <h2>{{ category[0] }}</h2>
