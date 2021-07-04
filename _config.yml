@@ -7,9 +7,9 @@
 
 # Site settings
 title: Francois Role's Pages
-email: fran.role@u-paris.fr
+email: francois.role@u-paris.fr
 description: > # this means to ignore newlines until "baseurl:"
-  This site is about ML techniques with an emphasis on usupervised textmining techniques.
+  This site is about ML techniques with an emphasis on usupervised NLP and text mining techniques.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://franrole.github.io" # the base hostname & protocol for your site
 # twitter_username: na
