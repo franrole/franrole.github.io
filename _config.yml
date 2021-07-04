@@ -56,11 +56,13 @@ header_pages:
   - about.md
   - other.md
 
-show_excerpts: true
+# show_excerpts: true
 
 author:
   name: Francois Role
   email: "francois.role@gmail.com"
+
+theme: minima
 
 minima:
   skin: dark
