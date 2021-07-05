@@ -4,11 +4,17 @@ title: Browse Posts by Category
 permalink: /browse/
 ---
 
-{% for category in site.categories %}
-    <h2>{{ category[0] }}</h2>
+{% comment %}
+# No comment {% assign sorted_posts = category[1] | reverse %}
+{% endcomment %}
+
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+    <h2 id="{{category[0] | uri_escape | downcase }}">{{category[0] | capitalize}}</H2>
+    {% assign sorted_posts = category[1] | reverse %}
     <ul>
-        {% for post in category[1] %}
-        <li>{{post.title}}</li>
+        {% for post in sorted_posts %}
+       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}</a></li>
         {% endfor %}
     </ul>
 {% endfor %}
