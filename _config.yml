@@ -54,7 +54,7 @@ defaults:
 
 header_pages:
   - about.md
-  - other.md
+  - browse.md
 
 # show_excerpts: true
 
@@ -68,4 +68,6 @@ minima:
   skin: dark
 
 # $orange-color
+
+# https://www.valhalla.fr/2017/10/16/jekyll-une-page-par-categorie/
 
