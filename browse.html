@@ -14,7 +14,7 @@ permalink: /browse/
     {% assign sorted_posts = category[1] | reverse %}
     <ul>
         {% for post in sorted_posts %}
-       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}</a></li>
+       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}{{  post.url }}</a></li>
         {% endfor %}
     </ul>
 {% endfor %}
