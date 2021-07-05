@@ -1,6 +1,6 @@
 ---
 title: "Interpretable Machine Learning"
-postcategory: [Machine Learning]
+postcategory: [Interpretable Machine Learning]
 description: "Methods for interpreting ML model"
 ---
 
