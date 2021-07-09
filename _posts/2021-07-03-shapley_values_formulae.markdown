@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On the Relationship between Two Common Formulations of the Shapley Value"
+title:  "On two Common Formulations of the Shapley Value"
 date:   2021-07-02 11:45:46 +0200
 categories: [Interpretable Machine Learning]
 ---
@@ -15,9 +15,9 @@ François Role - Associate professor - Université de Paris
 
 Given a characteristic function $v$, a set $N$ of $n$ players, and $S$ a variable ranging over all coalitions of players not containing a player $i$, the Shapley value for $i$ is most often defined as:
 
-\begin{equation}\label{v1}
+$$
 \varphi_i(v) = \sum_{S \subseteq N \setminus \{i\}}\frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S)) \qqad (1)
-\end{equation}
+$$
 
 
 
@@ -37,7 +37,7 @@ The problem with equation (2) is that it obfuscates the notion of permutation. O
 First, we note that (2) can be rewritten as:
 
 $$
-\varphi_i(v) = \frac{1}{n!} \sum_{S \subseteq N \setminus \{i\}} \binom{n-1}{\|S\|}^{-1} (n-1)! (v(S \cup \{i\}) - v(S)) (3) 
+\varphi_i(v) = \frac{1}{n!} \sum_{S \subseteq N \setminus \{i\}} \binom{n-1}{|S|}^{-1} (n-1)! (v(S \cup \{i\}) - v(S)) (3) 
 $$
 
 where the introduction of $(n-1)!$ makes reappear the notion of permutation which was not explicit in formula (2).
@@ -52,6 +52,11 @@ Expanding $\binom{n-1}{\|S\|}^{-1}$ and moving $n!$ into the sum, equation (3) c
  = & \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S))
 \end{split}
 \end{equation}
+
+$$
+ \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-1)!}{(n-1)(n-2)\dots(n-|S|)n!} (v(S \cup \{i\}) - v(S)) \\
+ = \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S))
+$$
 
 
 
