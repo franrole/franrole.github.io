@@ -5,7 +5,7 @@ permalink: /browse/
 ---
 
 {% comment %}
-# No comment {% assign sorted_posts = category[1] | reverse %}
+# post.url is  /interpretable%20machine%20learning/2021/07/02/on_shapley_values_formulae.html
 {% endcomment %}
 
 {% assign sorted_cats = site.categories | sort %}
@@ -14,7 +14,7 @@ permalink: /browse/
     {% assign sorted_posts = category[1] | reverse %}
     <ul>
         {% for post in sorted_posts %}
-       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}{{  post.url }}</a></li>
+       <li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}</a></li>
         {% endfor %}
     </ul>
 {% endfor %}
