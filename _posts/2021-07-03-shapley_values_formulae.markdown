@@ -16,7 +16,7 @@ François Role - Associate professor - Université de Paris
 Given a characteristic function $v$, a set $N$ of $n$ players, and $S$ a variable ranging over all coalitions of players not containing a player $i$, the Shapley value for $i$ is most often defined as:
 
 $$
-\varphi_i(v) = \sum_{S \subseteq N \setminus \{i\}}\frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S)) \qqad (1)
+\varphi_i(v) = \sum_{S \subseteq N \setminus \{i\}}\frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S)) \qquad (1)
 $$
 
 
@@ -43,15 +43,7 @@ $$
 where the introduction of $(n-1)!$ makes reappear the notion of permutation which was not explicit in formula (2).
 
 
-Expanding $\binom{n-1}{\|S\|}^{-1}$ and moving $n!$ into the sum, equation (3) can then be be rewritten so as to retrieve formula (\ref{v1}):
-
-
-\begin{equation}\label{v4}
-\begin{split}
-  &  \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-1)!}{(n-1)(n-2)\dots(n-|S|)n!} (v(S \cup \{i\}) - v(S)) \\
- = & \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-|S|-1)!}{n!} (v(S \cup \{i\}) - v(S))
-\end{split}
-\end{equation}
+Expanding $\binom{n-1}{\|S\|}^{-1}$ and moving $n!$ into the sum, equation (3) can then be be rewritten so as to retrieve formula (1):
 
 $$
  \sum_{S \subseteq N \setminus \{i\}} \frac{|S|!(n-1)!}{(n-1)(n-2)\dots(n-|S|)n!} (v(S \cup \{i\}) - v(S))
