@@ -201,6 +201,7 @@ print("{} = {}".format(linalg.det(A.I), 1./linalg.det(A)))
 
 
 And most importantly, if a square $n \times n$ matrix $A$ has a $0$ determinant then:
+- A is not invertible
 - The columns are dependent
 - The rows are dependent
 - $Ax=b$ has no or infinitely many solutions
@@ -208,45 +209,27 @@ And most importantly, if a square $n \times n$ matrix $A$ has a $0$ determinant 
 - $A$ has $r<n$ pivots
 - The reduced row echelon form has at least one zero row
 - The column and row spaces have dimensions $r<n$
-- $o$ is an eignevalue of $A$
+- $o$ is an eigenvalue of $A$
 - $A^TA$ is only semi-definite
 - $A$ has $r<n$ singular values
 
-Let's check these properties using an example.
+Let's check some of these properties using an example.
 
 ```python
-A = np.matrix([[143,  65, 129, 116],
-        [ 286,  130,  258,  232],
-        [124,  53, 101, 110],
-        [18,  31,  37, 97]])
-print("Two rows are dependent so we have det A = {} ".format(linalg.det(A)))
+A_sing = np.matrix([[143,  65],
+        [ 286,  130]])
+
+print("Two rows are dependent so we have det A = {} ".format(linalg.det(A_sing)))
+print("The rank of  A is only {}".format(linalg.matrix_rank(A_sing)))
+values = np.linalg.eig(A_sing)[0]
+print(f"One of the eigenvalues of A is 0 ==>  {values}")
 ```
 
     Two rows are dependent so we have det A = 0.0 
+    The rank of  A is only 1
+    One of the eigenvalues of A is 0 ==>  [273.   0.]
 
 
-
-```python
-A = np.matrix([[143,  65, 129, 116],
-        [ 286,  130,  258,  232],
-        [124,  53, 101, 110],
-        [18,  31,  37, 97]])
-b = np.array([100,150,200,350])
-# np.linalg.solve(A,b )   numpy would tell us  LinAlgError: Singular matrix !!!
-# if A was not singular we would have one solution: x=A^-1b
-# In this case we can still use  use lstsq for the least-squares best “solution”.
-```
-
-
-```python
-A = np.matrix([[143,  65, 129, 116],
-        [ 286,  130,  258,  232],
-        [124,  53, 101, 110],
-        [18,  31,  37, 97]],dtype=float)
-b = np.array([0.,0.,0.,0.])
-# np.linalg.solve(A,b )  again LinAlgError: Singular matrix !!!
-# if A was not singular we would have one solution: x=0
-```
 
 
 
