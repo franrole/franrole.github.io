@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On two Common Formulations of the Shapley Value"
-date:   2021-07-02 11:45:46 +0200
+date:   2021-07-02
 categories: [Interpretable Machine Learning]
 ---
 
