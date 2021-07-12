@@ -23,27 +23,17 @@ In thi post, I will review some basic but useful facts about determinants.
 
 
 
-```python
-import matplotlib.pyplot as plt
-
-plt.plot([1, 2, 3] , [2, 4, 6])
-plt.show()
-```
 
 
-<img src="/assets/images/07-10-21-determinants_files/07-10-21-determinants_4_0.png">
+For starters, let's compute the determinant of the following square matrix :
 
-
-<img src="/assets/images/shapley.png">
-
-
-Let's compute the determinant of the following square matrix :
-
+$$
 \begin{bmatrix}
 3 &4 &6 \\
 0 &1 &2 \\
 5& 3& 1 
 \end{bmatrix}
+$$
 
 
 
