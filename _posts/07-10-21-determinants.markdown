@@ -15,7 +15,6 @@ François Role - Associate professor - Université de Paris
 In this post, I will review some basic but useful facts about determinants.
 
 
-# Determinants 
 
 ## Computing a determinant
 
@@ -157,6 +156,64 @@ linalg.det(A) * linalg.det(B)
 
 
     -16342606685111670.0
+
+### If we form $B$ from a square matrix $A$ by adding a constant times one row of $A$ to another row of $A$ , then $det A =det B$.
+
+
+```python
+A = np.matrix([[143,  65, 129, 116],
+        [ 18,  31,  37,  97],
+        [124,  53, 101, 110],
+        [195,  21,  98, 149]])
+
+B= np.matrix([[143,  65, 129, 116],
+        [ 161,  96,  166,  213],
+        [124,  53, 101, 110],
+        [195,  21,  98, 149]])
+
+print(linalg.det(A))
+print(linalg.det(B))
+
+```
+
+    -4830905.0
+    -4830905.0
+
+
+### $det A^T= det A$
+
+
+```python
+print(linalg.det(A.T))
+```
+
+    -4830905.0
+
+
+### if $A$ is invertible $det A^{-1}= 1 /det A$
+
+
+```python
+print("{} = {}".format(linalg.det(A.I), 1./linalg.det(A)))
+```
+
+    -2.0700055165647044e-07 = -2.0700055165647044e-07
+
+
+And most importantly, if a square $n \times n$ matrix $A$ has a $0$ determinant then:
+- The columns are dependent
+- The rows are dependent
+- $Ax=b$ has no or infinitely many solutions
+- $Ax=0$ has infinitely many solutions
+- $A$ has $r<n$ pivots
+- The reduced row echelon form has at least one zero row
+- The column and row spaces have dimensions $r<n$
+- $o$ is an eignevalue of $A$
+- $A^TA$ is only semi-definite
+- $A$ has $r<n$ singular values
+
+Let's check these properties using an example.
+
 
 
 
