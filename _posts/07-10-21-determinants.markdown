@@ -214,6 +214,40 @@ And most importantly, if a square $n \times n$ matrix $A$ has a $0$ determinant 
 
 Let's check these properties using an example.
 
+```python
+A = np.matrix([[143,  65, 129, 116],
+        [ 286,  130,  258,  232],
+        [124,  53, 101, 110],
+        [18,  31,  37, 97]])
+print("Two rows are dependent so we have det A = {} ".format(linalg.det(A)))
+```
+
+    Two rows are dependent so we have det A = 0.0 
+
+
+
+```python
+A = np.matrix([[143,  65, 129, 116],
+        [ 286,  130,  258,  232],
+        [124,  53, 101, 110],
+        [18,  31,  37, 97]])
+b = np.array([100,150,200,350])
+# np.linalg.solve(A,b )   numpy would tell us  LinAlgError: Singular matrix !!!
+# if A was not singular we would have one solution: x=A^-1b
+# In this case we can still use  use lstsq for the least-squares best “solution”.
+```
+
+
+```python
+A = np.matrix([[143,  65, 129, 116],
+        [ 286,  130,  258,  232],
+        [124,  53, 101, 110],
+        [18,  31,  37, 97]],dtype=float)
+b = np.array([0.,0.,0.,0.])
+# np.linalg.solve(A,b )  again LinAlgError: Singular matrix !!!
+# if A was not singular we would have one solution: x=0
+```
+
 
 
 
