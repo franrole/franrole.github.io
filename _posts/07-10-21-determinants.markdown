@@ -77,5 +77,89 @@ A_23=(-1)**5 * (9-20) ; A_23
 
 $det A= a_{22}A_{22}  + a_{23}A_{23} = -27 + 2(11) =-5$
 
+***NUMPY:*** verify the result using Numpy:
+
+
+```python
+linalg.det(A)
+```
+
+
+
+
+    -5.0000000000000036
+
+
+
+
+```python
+def cofactor(A,i,j) :
+    submatrix=A[np.array(range(i)+range(i+1,A.shape[0]))[:,np.newaxis], range(j)+range(j+1,A.shape[1]) ]
+    return (-1)**(i+j)  * linalg.det(submatrix)
+    
+detA= A[1,1] *  cofactor(A,1,1) + A[1,2] *  cofactor(A,1,2) ; detA
+
+
+```
+
+## Properties Of Determinants
+
+### For two matrices $A$ and $B$ of the same order $det AB = det A \, det B$.
+
+
+```python
+A=np.matrix(np.random.randint(200, size=(4,4)));A
+```
+
+
+
+
+    matrix([[145, 128, 158,  23],
+            [114,  59,   9,  85],
+            [ 39, 104,  18,  74],
+            [173,  75,  23,  59]])
+
+
+
+
+```python
+B=np.matrix(np.random.randint(200, size=(4,4)));B
+```
+
+
+
+
+    matrix([[140, 164, 153, 103],
+            [119,  31,   6,  11],
+            [ 50, 144,  24,  27],
+            [ 62, 167,  41, 161]])
+
+
+
+
+```python
+linalg.det(A*B)
+```
+
+
+
+
+    -16342606685111668.0
+
+
+
+
+```python
+linalg.det(A) * linalg.det(B) 
+```
+
+
+
+
+    -16342606685111670.0
+
+
+
+
 
 
