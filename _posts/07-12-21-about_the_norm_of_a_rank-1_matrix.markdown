@@ -14,7 +14,7 @@ François Role - Associate professor - Université de Paris
 
 What is the Frobenius norm of a rank-1 matrix made out of two unit vectors? And why is it worth asking the question!
 
-Let's build a rank-1 matrix as the outer product of two unit vectors: ${\lVert}{\rVert}$
+Let's build a rank-1 matrix as the outer product of two unit vectors: ${\lVert}X{\rVert}_F$
 
 
 ```python
