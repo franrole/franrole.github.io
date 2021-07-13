@@ -63,4 +63,13 @@ $$
 \|X\|_F =\|uv^T\|_F = \sqrt{tr(uv^Tvu^T)} = \sqrt{tr(uu^T)} = \sqrt{tr(u^Tu)} = \sqrt{1}=1
 $$
 
+And now, what's the point of investigating this?
+Because this fact allows to derive another definition for the Frobenius norm. 
+
+Given a SVD decomposition  $X = \sum_{k=1}^{r} \sigma_ku_kv_k^T$, we have:
+
+$$
+\|X\|_F = \|\sum_{k=1}^{r} \sigma_ku_kv_k^T \|_F= \sqrt{\sum_{k=1}^{r}  \sigma_k^2\| u_kv_k^T \|_F}= \sqrt{\sum_{k=1}^{r}  \sigma_k^2}
+$$
+
 
