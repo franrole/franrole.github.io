@@ -14,7 +14,7 @@ François Role - Associate professor - Université de Paris
 
 What is the Frobenius norm of a rank-1 matrix made out of two unit vectors? And why is it worth asking the question!
 
-Let's build a rank-1 matrix as the outer product of two unit vectors: $\lVert X\rVert_F$    $=\sqrt{\sum_{k=1}^r \sigma_k^2}$ 
+Let's build a rank-1 matrix as the outer product of two unit vectors: 
 
 ```python
 u = np.array([[1.], [2.], [5.]])
@@ -25,7 +25,6 @@ X = u @ v.T
 X
 ```
 
-and 
 
 
     array([[0.10170953, 0.1356127 , 0.06780635],
@@ -77,13 +76,7 @@ $$
 \|\sum_{i=1}^{n}  \alpha_i  X_i \|_F^2 = \sum_{i=1}^{n}  \alpha_i^2 \| A_i \|_F^2
 $$
 
-Note that the result $\lVert X\rVert_F =\sqrt{\sum_{k=1}^r \sigma_k^2}$ is 
-
-$$
- \|X\|_F = \sqrt{\sum_{k=1}^r \sigma_k^2}
-$$
-
- is more commonly derived as:
+Note that the result $\lVert X\rVert_F =\sqrt{\sum_{k=1}^r \sigma_k^2}$ is more commonly derived as:
 
 $$
 \|U\Sigma V^T\|_F = \sqrt{trace(U\Sigma V^T V\Sigma U^T)}= \sqrt{trace(U\Sigma \Sigma U^T)}= \sqrt{trace(\Sigma U^T U\Sigma)}=\sqrt{trace(\Sigma^2)}
