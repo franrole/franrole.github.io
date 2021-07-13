@@ -78,11 +78,7 @@ $$
 \|\sum_{i=1}^{n}  \alpha_i  X_i \|_F^2 = \sum_{i=1}^{n}  \alpha_i^2 \| A_i \|_F^2
 $$
 
-Note that the result:
-
-$$
-\|X\|_F =  \sqrt{\sum_{k=1}^{r}  \sigma_k^2}
-$$
+Note that the result $\|X\|_F =  \sqrt{\sum_{k=1}^{r}  \sigma_k^2}$
 
 is more commonly derived as:
 
