@@ -14,7 +14,7 @@ François Role - Associate professor - Université de Paris
 
 What is the Frobenius norm of a rank-1 matrix made out of two unit vectors? And why is it worth asking the question!
 
-Let's build a rank-1 matrix as the outer product of two unit vectors: 
+Let's build a rank-1 matrix as the outer product of two unit vectors:  ${\lVert}X{\rVert}_F = \sqrt{\sum_{k=1}^r \sigma_k^2}$
 
 
 ```python
@@ -78,7 +78,7 @@ $$
 \|\sum_{i=1}^{n}  \alpha_i  X_i \|_F^2 = \sum_{i=1}^{n}  \alpha_i^2 \| A_i \|_F^2
 $$
 
-Note that the result:  ${\lVert}X{\rVert}_F = \sqrt{\sum_{k=1}^r \sigma_k^2}$
+Note that the result:
 
 $$
  \|X\|_F = \sqrt{\sum_{k=1}^r \sigma_k^2}
