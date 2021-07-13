@@ -25,7 +25,7 @@ X = u @ v.T
 X
 ```
 
-
+and $\lVert X\rVert_F =\sqrt{\sum_{k=1}^r \sigma_k^2}$
 
 
     array([[0.10170953, 0.1356127 , 0.06780635],
