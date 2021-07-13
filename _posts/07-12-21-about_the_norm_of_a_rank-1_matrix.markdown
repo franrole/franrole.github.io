@@ -25,3 +25,19 @@ v = v / np.linalg.norm(v)
 X = u @ v.T
 X
 ```
+
+
+
+
+    array([[0.10170953, 0.1356127 , 0.06780635],
+           [0.20341905, 0.2712254 , 0.1356127 ],
+           [0.50854763, 0.6780635 , 0.33903175]])
+
+
+
+Using the most common definition of the Frobenius norm $‖.‖_𝐹$ 
+
+\begin{align}
+\|X\|_F & =\sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} x_{i,j}^2 }=\sqrt{Tr(X^TX)}=\sqrt{Tr(XX^T)}\\
+\end{align}
+
