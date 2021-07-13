@@ -37,7 +37,9 @@ X
 
 Using the most common definition of the Frobenius norm $‖.‖_𝐹$ 
 
+$$
 \begin{align}
 \|X\|_F & =\sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} x_{i,j}^2 }=\sqrt{Tr(X^TX)}=\sqrt{Tr(XX^T)}\\
 \end{align}
+$$
 
