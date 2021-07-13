@@ -81,7 +81,7 @@ $$
 Note that the result:
 
 $$
-\|X\|_F = \|\sum_{k=1}^{r} \sigma_ku_kv_k^T \|_F= \sqrt{\sum_{k=1}^{r}  \sigma_k^2\| u_kv_k^T \|_F}= \sqrt{\sum_{k=1}^{r}  \sigma_k^2}
+\|X\|_F =  \sqrt{\sum_{k=1}^{r}  \sigma_k^2}
 $$
 
 is more commonly derived as:
