@@ -43,3 +43,19 @@ $$
 \end{align}
 $$
 
+We find that the norm of $X$ is $1$.
+
+
+```python
+print(np.linalg.norm(X, ord='fro', axis=None, keepdims=False) )
+print(np.sqrt(np.trace(X @ X.T)))
+print(np.sqrt(np.trace(X.T @ X)))
+```
+
+    1.0
+    0.9999999999999999
+    1.0
+
+
+First of all, why is that? This is because:
+
