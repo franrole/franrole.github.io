@@ -72,4 +72,17 @@ $$
 \|X\|_F = \|\sum_{k=1}^{r} \sigma_ku_kv_k^T \|_F= \sqrt{\sum_{k=1}^{r}  \sigma_k^2\| u_kv_k^T \|_F}= \sqrt{\sum_{k=1}^{r}  \sigma_k^2}
 $$
 
+where in addition to $\| u_kv_k^T \|_F=1$ we also use the fact that the norm of a (weighted sum of matrix can be expressed in terms of the norms of the iniviual matrices:
+$$
+\|\sum_{i=1}^{n}  \alpha_i  X_i \|_F^2 = \sum_{i=1}^{n}  \alpha_i^2 \| A_i \|_F^2
+$$
+
+Note that the result $\|X\|_F= \sqrt{\sum_{k=1}^{r}  \sigma_k^2}$ is more commonly derived as:
+
+$$
+\|U\Sigma V^T\|_F = \sqrt{trace(U\Sigma V^T V\Sigma U^T)}= \sqrt{trace(U\Sigma \Sigma U^T)}= \sqrt{trace(\Sigma U^T U\Sigma)}=\sqrt{trace(\Sigma^2)}
+$$
+
+
+
 
