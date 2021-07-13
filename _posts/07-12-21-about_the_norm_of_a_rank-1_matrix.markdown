@@ -59,3 +59,8 @@ print(np.sqrt(np.trace(X.T @ X)))
 
 First of all, why is that? This is because:
 
+$$
+\|X\|_F =\|uv^T\|_F = \sqrt{tr(uv^Tvu^T)} = \sqrt{tr(uu^T)} = \sqrt{tr(u^Tu)} = \sqrt{1}=1
+$$
+
+
