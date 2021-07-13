@@ -25,7 +25,7 @@ X = u @ v.T
 X
 ```
 
-and $\lVert X\rVert_F =\sqrt{\sum_{k=1}^r \sigma_k^2}$
+and 
 
 
     array([[0.10170953, 0.1356127 , 0.06780635],
@@ -77,7 +77,7 @@ $$
 \|\sum_{i=1}^{n}  \alpha_i  X_i \|_F^2 = \sum_{i=1}^{n}  \alpha_i^2 \| A_i \|_F^2
 $$
 
-Note that the result:
+Note that the result $\lVert X\rVert_F =\sqrt{\sum_{k=1}^r \sigma_k^2}$ is 
 
 $$
  \|X\|_F = \sqrt{\sum_{k=1}^r \sigma_k^2}
