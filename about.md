@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am a ML teacher-researcher at Université de Paris where my research mainly focus on text mining and unsupervised techniques. 
+To know more about my favourite research themes, see  the following pages: [DBLP](https://dblp.org/pid/47/3852.html), [Linkedin](https://www.linkedin.com/in/role-francois-295a4112/?originalSubdomain=fr), [Coclust](https://pypi.org/project/coclust/), {% include icon-github.html username="franrole" %} /
+[GitHub](https://github.com/franrole).
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Besides research, I am curious about all aspects of Atifical Intelligence and Machine Learning.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+
